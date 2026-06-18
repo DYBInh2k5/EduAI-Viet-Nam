@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EduAI Việt Nam
 
-## Getting Started
+Nền tảng học tập trực tuyến hiện đại dành cho học sinh Việt Nam từ lớp 1 đến lớp 12, tích hợp AI Gia sư hỗ trợ học tập 24/7.
 
-First, run the development server:
+## 🚀 Tính năng chính
+
+- 📚 **Học tập toàn diện**: Từ lớp 1 đến lớp 12 với nhiều môn học (Toán, Văn, Anh, Vật lý, Hóa học)
+- 🎥 **Video bài giảng**: Video thực tế từ YouTube (VietJack và các nguồn giáo dục uy tín)
+- 📝 **Nội dung chi tiết**: Giải thích lý thuyết, công thức, ví dụ minh họa
+- ✅ **Bài kiểm tra**: Trắc nghiệm tự động chấm điểm với giải thích đáp án
+- 🤖 **AI Gia sư**: Hỗ trợ học tập 24/7, trả lời câu hỏi, giải đáp thắc mắc
+- 📊 **Dashboard**: Thống kê tiến độ học tập cá nhân
+- 📱 **Responsive**: Hỗ trợ mọi thiết bị, màn hình
+
+## 🛠️ Công nghệ sử dụng
+
+- **Next.js 16** - Framework React hiện đại
+- **TypeScript** - Kiểm tra kiểu tĩnh
+- **Tailwind CSS 4** - Utility-first CSS
+- **React 19** - Thư viện UI
+- **Framer Motion** - Animation
+- **Lucide React** - Icons
+- **better-sqlite3** - CSDL (dự phòng)
+
+## 🚀 Bắt đầu
+
+### Cài đặt
+
+```bash
+npm install
+```
+
+### Chạy development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Mở [http://localhost:3000](http://localhost:3000) để xem kết quả.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 📂 Cấu trúc dự án
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── page.tsx              # Trang chủ
+│   ├── layout.tsx            # Layout chung
+│   ├── classes/              # Trang chọn lớp, môn học
+│   ├── courses/              # Trang khóa học, bài học
+│   ├── quizzes/              # Trang bài kiểm tra
+│   ├── dashboard/            # Trang dashboard
+│   ├── ai-tutor/             # Trang AI Gia sư
+│   └── api/                  # API routes
+├── components/
+│   ├── ui/                   # Component UI cơ bản
+│   ├── home/                 # Component trang chủ
+│   ├── navbar.tsx            # Thanh điều hướng
+│   └── footer.tsx            # Footer
+└── lib/
+    ├── data.ts               # Dữ liệu khóa học
+    ├── db.ts                 # Kết nối CSDL
+    └── utils.ts              # Helper functions
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📚 Dữ liệu học tập
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Dự án bao gồm:
+- Toán lớp 10, 11, 12
+- Ngữ văn lớp 10, 11
+- Tiếng Anh lớp 8, 9
+- Vật lý lớp 12
+- Hóa học lớp 10
 
-## Deploy on Vercel
+Mỗi môn học có nhiều chương, bài học với video và nội dung chi tiết.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌟 Đóng góp
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Mọi đóng góp đều được chào đón! Vui lòng tạo issue hoặc pull request.
+
+## 📝 Giấy phép
+
+MIT License
