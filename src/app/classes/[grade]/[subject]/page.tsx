@@ -3,7 +3,7 @@
 import { useParams, useRouter } from "next/navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, PlayCircle, Star } from "lucide-react";
+import { ArrowLeft, Star } from "lucide-react";
 import Link from "next/link";
 import { ALL_COURSES } from "@/lib/data";
 
@@ -61,7 +61,6 @@ export default function SubjectDetailPage() {
             ))}
           </div>
         )}
-        </div>
       </div>
     </div>
   );

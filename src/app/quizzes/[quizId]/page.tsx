@@ -94,7 +94,7 @@ export default function QuizPage() {
                 </CardHeader>
                 <CardContent>
                   <div className="grid gap-3 mb-4">
-                    {q.options.map((option, optIdx) => {
+                    {q.options.map((option: string, optIdx: number) => {
                       const isSelected = selectedAnswers[q.id] === optIdx;
                       const isCorrectOption = isSubmitted && q.correctOption === optIdx;
                       const isWrongOption = isSubmitted && isSelected && q.correctOption !== optIdx;
